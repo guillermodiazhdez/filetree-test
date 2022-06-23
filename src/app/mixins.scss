@@ -1,0 +1,9 @@
+@mixin child {
+    display: block;
+    margin-left: 1rem;
+
+    &.open {
+        display: none;
+    }
+  }
+  
