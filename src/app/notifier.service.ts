@@ -9,7 +9,7 @@ export class NotifierService {
     return this.notifierSubject.asObservable();
   }
 
-  public notify(open: boolean): void {
-    this.notifierSubject.next(open);
+  public notify(expandible: boolean): void {
+    this.notifierSubject.next(expandible);
   }
 }

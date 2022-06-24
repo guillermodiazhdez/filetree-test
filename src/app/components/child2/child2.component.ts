@@ -6,7 +6,7 @@ import { Component, HostBinding, Input } from '@angular/core';
   styleUrls: ['./child2.component.scss'],
 })
 export class Child2Component {
-  @HostBinding('class.open')
+  @HostBinding('class.expandible')
   @Input()
-  open: boolean = false;
+  expandible: boolean = false;
 }

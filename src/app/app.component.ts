@@ -8,7 +8,7 @@ import { NotifierService } from './notifier.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public open: boolean = false;
+  public expandible: boolean = false;
 
   private subscription: Subscription | undefined;
   constructor(private notifier: NotifierService) {}
@@ -16,8 +16,8 @@ export class AppComponent {
   ngOnInit() {
     this.subscription = this.notifier
       .getNotifierListener()
-      .subscribe((open) => {
-        this.open = open;
+      .subscribe((expandible) => {
+        this.expandible = expandible;
       });
   }
 
